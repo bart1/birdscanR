@@ -1,6 +1,7 @@
 #### compileData -----------------------------------------------------------
 #' @title compileData
-#' @author Baptiste Schmid, \email{baptiste.schmid@@vogelwarte.ch}
+#' @author Baptiste Schmid, \email{baptiste.schmid@@vogelwarte.ch};
+#' Birgen Haest, \email{birgen.haest@@vogelwarte.ch};
 #' @description The function \code{compileData} aim to filter database-extracts and 
 #' save metadata used to compute MTR \code{computeMTR}. The function \code{compileData} 
 #' is a list of filtered data and parameters. It takes the output from \code{extractDbData} 
@@ -14,7 +15,7 @@
 #' the function \code{loadManualBlindTimes}. 
 #' It include the automated blind times induced by changes in measurment protocol, 
 #' and blind time added manually to remove periods of incoherent data collection.
-#' @param radrSiteData
+#' @param radarSiteData dataframe/vector with the database site table
 #' @param dbName Name of the database. Can be a useful meta data.
 #' @param pulseTypeSelection character vector with the pulse types which should 
 #' be included in the subset. Options: “S”, “M”, “L”, i.e. short-, medium-, long-pulse, respectively. 
