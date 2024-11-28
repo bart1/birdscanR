@@ -2,10 +2,12 @@
 #' @title compileData
 #' @author Baptiste Schmid, \email{baptiste.schmid@@vogelwarte.ch};
 #' Birgen Haest, \email{birgen.haest@@vogelwarte.ch};
-#' @description The function \code{compileData} aim to filter database-extracts and 
-#' save metadata used to compute MTR \code{computeMTR}. The function \code{compileData} 
-#' is a list of filtered data and parameters. It takes the output from \code{extractDbData} 
-#' and trunk the needed dataset to the restricted settings, e.g. time frame, pulse type.
+#' @description The function \code{compileData} creates a standardized Birdscan 
+#' MR1 data product, including metadata, that can be used to publish the 
+#' dataset in a standardized manner. This results in improved accessibility 
+#' across datasets and owners. The function uses the output from 
+#' \code{extractDbData} and allows for specific filtering of the dataset, 
+#' e.g., by time range, pulse type, and class.
 #' @param echoData dataframe with the echo data from the data list created by 
 #' the function \code{extractDBData}.
 #' @param protocolData dataframe with the protocol data from the data list created by
